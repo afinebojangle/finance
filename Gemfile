@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'business_time'
+gem 'statsample'
+gem 'squeel'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
