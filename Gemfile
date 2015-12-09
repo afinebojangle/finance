@@ -4,6 +4,7 @@ gem 'business_time'
 gem 'statsample'
 gem 'squeel'
 gem 'bootstrap', '~> 4.0.0.alpha1'
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
