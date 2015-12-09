@@ -19,7 +19,7 @@ class Capm_regression
 
     errors = []
 
-    days = @start_date.business_dates_until(@end_date.to_date)
+    days = @start_date.business_dates_until(@end_date)
 
     days.each do |day|
       sd = day - 30.days
