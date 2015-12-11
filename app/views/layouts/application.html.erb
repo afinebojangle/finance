@@ -10,19 +10,22 @@
 <body>
 
   <nav class="navbar navbar-full navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">T-Rex Analysis</a>
+    <a class="navbar-brand" href="#">T-Rex Analytics</a>
     <ul class="nav navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <%= link_to "Features", welcome_features_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <%= link_to"Learn", welcome_learn_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <%= link_to "Beta", welcome_beta_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", welcome_about_path, class: "nav-link" %>
       </li>
     </ul>
   </nav>  
