@@ -6,6 +6,7 @@ gem 'squeel'
 gem 'bootstrap', '~> 4.0.0.alpha1'
 gem 'devise'
 gem 'figaro'
+gem 'simple_form'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
