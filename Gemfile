@@ -7,6 +7,8 @@ gem 'bootstrap', '~> 4.0.0.alpha1'
 gem 'devise'
 gem 'figaro'
 gem 'simple_form'
+gem "responders"
+gem 'chartkick'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

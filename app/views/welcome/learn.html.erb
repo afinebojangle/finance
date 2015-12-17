@@ -4,7 +4,7 @@
         <li class="nav-item"><a class="nav-link" href="#start" data-toggle="tab">Getting Started</a></li>
         <li class="nav-item"><a class="nav-link" href="#regression" data-toggle="tab">Regression Analysis</a></li>
         <li class="nav-item"><a class="nav-link" href="#capm" data-toggle="tab">Captial Asset Pricing Model</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Strategy</a></li>
+        <li class="nav-item"><a class="nav-link" href="#strategy" data-toggle="tab">Strategy</a></li>
     </ul>
 </div>
 
@@ -111,6 +111,32 @@
             
             <p>
                 Read the Strategy section to learn more about how to apply <var>e</var> to your trading strategy.
+            </p>
+        </div>
+        
+        <div class="tab-pane" id="strategy" role="tabpanel">
+            <p>We have a well formed model and we want to trade some stocks, now what?</p>
+            
+            <p>
+                What we need is a plan, a strategy. To start, recall the CAPM model and think about it this way: There are two parts of the model, what the nobel prize winning model says should happen and the difference between what should have happened and what did happen.
+            </p>
+            
+            <p>
+                the difference between what actually happened and what the model thought should happen is known as the error term, <var>e</var>. A positive <var>e</var> means that the price of the stock is higher than the model thinks it should be. A negative <var>e</var> means
+                 that the model thinks the price should be higher than it actually is.
+            </p>
+            
+            <p>
+                Assuming you want to buy right now, sort stocks based on ascending values of <var>e</var>. This will give you a list of stocks that are most under valued based on the CAPM.
+            </p>
+            
+            <p>
+                Or assume that you are looking to sell stocks you own, or short sell some stock you dont own. This time you would want to sort by descending values of <var>e</var>, giving you a list of stocks that are most over valued based on the CAPM.
+            </p>
+            
+            <p>
+                Of course you always have to keep in mind, past performace does not guarentee future performace. Also, it is possible that something material has changed about the company who's stock you are looking at that would justify a large value of <var>e</var>.
+                Maybe the company is in merger talks and that is why the stock price is high compared to CAPM. The sort of screening methods mentioned above do not tell you what to do, only where to look!
             </p>
         </div>
     </div>

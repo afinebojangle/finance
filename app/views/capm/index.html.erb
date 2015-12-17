@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <%= simple_form_for @capm_regression, url: {action: "capm_graph"}, html: {method: "get"}, remote: true do |f| %>
+            <%= f.input :ticker, label: 'O only please' %>
+            <%= f.input :index, label: 'sp500 only please' %>
+            <%= f.input :start_date, as: :string, input_html: {type: :date}, label: 'Start Date' %>
+            <%= f.input :end_date, as: :string, input_html: {type: :date}, label: 'End Date' %>
+            <%= f.button :submit, class: "btn-primary" %>
+        <% end %>
+        <hr>
+    </div>
+    
+    <div class="graph_box">
+        <h4>This is where the graph goes!</h4>
+    </div>
+</div>

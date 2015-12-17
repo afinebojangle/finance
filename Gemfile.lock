@@ -52,6 +52,7 @@ GEM
       activesupport (>= 3.1.0)
       tzinfo
     byebug (8.2.1)
+    chartkick (1.4.1)
     clbustos-rtf (0.4.2)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -218,12 +219,14 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha1)
   business_time
   byebug
+  chartkick
   coffee-rails (~> 4.1.0)
   devise
   figaro
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.0)
+  responders
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form

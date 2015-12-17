@@ -7,25 +7,30 @@ class Capm_regression
 
   validates :ticker, :index, :start_date, :end_date, presence: true
 
-  def initialize(ticker, index, start_date, end_date)
-    @ticker = ticker
-    @index = index
-    @start_date = start_date
-    @end_date = end_date
-  end
+  # def initialize(ticker, index, start_date, end_date)
+  #   @ticker = ticker
+  #   @index = index
+  #   @start_date = start_date
+  #   @end_date = end_date
+  # end
 
   def capm_regress
     
-
+    start_date = Date.strptime("#{self.start_date}", '%Y-%m-%d')
+    end_date = Date.strptime("#{self.end_date}", '%Y-%m-%d')
+    tick = self.ticker
+    dex = self.index
+    
+    #byebug
     errors = []
 
-    days = @start_date.business_dates_until(@end_date)
+    days = start_date.business_dates_until(end_date)
 
     days.each do |day|
       sd = day - 30.days
       ed = day
-      tick = @ticker
-      dex = @index
+      # tick = @ticker
+      # dex = @index
 
       stocks = Stock.where{(date >= sd) & (date <= ed) & (ticker == tick)}.order(date: :asc).pluck(:price).to_vector
       

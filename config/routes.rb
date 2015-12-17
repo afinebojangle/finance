@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'capm/index'
+
+  get 'capm/capm_graph'
+
   devise_for :users
   
   get 'welcome/home'
