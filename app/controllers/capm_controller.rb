@@ -16,7 +16,6 @@ class CapmController < ApplicationController
     respond_with(@capm_graph) do |format|
       format.html {redirect_to capm_index_path}
     end
-
   end
   
   private
