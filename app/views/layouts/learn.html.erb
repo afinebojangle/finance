@@ -37,7 +37,6 @@
     </ul>
   </nav>  
 
-  
   <% if flash[:notice] %> 
     <div class="alert alert-success"> 
       <button type="button" class="close" data-dismiss="alert">&times;</button> 
@@ -54,9 +53,19 @@
         <%= flash[:alert] %> 
       </div> 
   <% end %> 
+  
+  <p><h2 class="text-xs-center">Learning Center</h2></p>  
 
+    <div class="container">
+        <div class="col-md-3">
+            <%= render "learn/learn_menu" %>
+        </div>
+        <div class="col-md-9">
 
-<%= yield %>
+            <%= yield %>
+
+        </div>
+    </div>  
 
 </body>
 </html>

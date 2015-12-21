@@ -6,11 +6,15 @@ Rails.application.routes.draw do
 
   devise_for :users
   
+  get 'learn', to: 'learn#index'
+  get 'learn/regression'
+  get 'learn/capm'
+  get 'learn/capmstrategy'
+  
   get 'welcome/home'
   get 'welcome/features'
   get 'welcome/about'
   get 'welcome/beta'
-  get 'welcome/learn'
 
   root to: "welcome#home"
   
