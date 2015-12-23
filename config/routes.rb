@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'learn', to: 'learn#index'
   get 'learn/regression'
   get 'learn/capm'
-  get 'learn/capmstrategy'
+  get 'learn/strategy'
   
   get 'welcome/home'
   get 'welcome/features'

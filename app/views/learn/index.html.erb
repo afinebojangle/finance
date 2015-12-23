@@ -1,139 +1,23 @@
+</br>
 
 <div class="col-md-3">
     <%= render "learn_menu" %>
 </div>
 
 <div class="col-md-9">
-    <div class="tab-content" id="tabs">
-        <div class="tab-pane" id="start" role="tabpanel">
-            <p>Welcome to T-Rex Analytics. We aim to provide you with revelant market analysis that is easy to use and helpful in a different way.</p>
-            
-            <p>Different in what way? In a way that tells you the effectivness of other analysis methods. There are plenty of sites out there looking you give you leg up on the market.
-            At T-Rex we know that it is unlikely that you will ever get a leg up on the institutional types - it is their job to make money off of you and they are very good at it.
-            </p>
-            
-            <p>What we can do is show when when their "edge" is actually a mirage. Traders are very focused on tactics, go to any trading site and you will see desctiptions of things like: "Holloween Effect", "Covered Call Spreads", "Straddles vs Strangles" and all kinds of other absurdley named strategies.</p>
-            
-            <p>What you very rarely see people talk about is how most of the market is just made up. That is right, market prices are fake and reflect only what the last person paid for that stock. How do you know if that person knew what they were doing? How do you know if that is a fair prices? Chances are, you dont. But people have dedicated their lives to these sorts of questions, and some of them have even won Nobel prizes for their work.</p>
-            
-            <p>At T-Rex Analytics, we bring you these nobel prize winning models, and tell you what they say about market prices. We do that through Regression Analysis.</p>
-        </div>
-        
-        <div class="tab-pane" id="regression" role="tabpanel">
-            <p>Broadly Speaking, regression analysis is a statsitical technique that turns data into equations. To do this you need data and a model. For market anaylsis, the data is the easy part as we are usually looking at changes in security price over time.
-            The model is much more difficult since it requires insight into the underlying influences of a stock's price.</P>
-            
-            <p>While there are those intrepid souls who may want to bet their savings on their own model, we prefer to use models from people who actually know what they are talking about. For illustration purposes we are goings to use the equation of a simple line:</p>
-            
-            <p><var>y</var> = <var>a</var> + <var>bx</var> + <var>e</var></p>
-            
-            <p>Where:</p>
-            
-            <p>
-                <var>y</var> = Dependent Variable</br>
-                <var>a</var> = Line Intercept</br>
-                <var>b</var> = Slope of the Line</br>
-                <var>x</var> = Independent Variable</br>
-                <var>e</var> = Error Term
-            </p>
-            
-            <p>
-                Let's break this down. The dependent variable is usually what we are interested in. In stocks, the depenent variable would be stock price. The dependent variable gets it name as the value of <var>y</var> varies based on changes in one or more independent variables.
-                How much the indepenent variable controls changes in the dependent is captured in the slope term <var>b</var>. The intercept, <var>a</var> can be thought of as a sort of head start. Think of the case when the independent value is zero. In that case, the value <var>y</var> is equal to the intercept. 
-                Said another way, the intercept captures the change in the dependent variable that is not due to changes in the independent variable. Lastly there is the error term, <var>e</var>. <var>E</var> captures the difference between what the model says <var>y</var> should be and what the value actually is. 
-                In some ways, it measures the fit of the data to the model at any given point.
-            </p>
-            
-            <p>
-                That is the basics of regression analysis in general. To learn more about regression analysis in the context of financial markets, read about any of the models we have implemented.
-            </p>
-        </div>
-        
-        <div class="tab-pane" id="capm" role="tabpanel">
-            <blockquote class="blockquote">
-                <p>"The Capital Asset Pricing Model is Finance"</p>
-                <footer class="blockquote-footer">Grad School Professor</footer>
-            </blockquote>
-            
-            <p>
-                CAPM is in many ways the foundation of the modern stock market. As in all of academia, the CAPM is the amagamation of several people's work. But the model is largely ascribed to William Sharpe in 1964. Sharpe went on to be awarded the 1990 Nobel Prize in Economics for his contribution.
-            </p>
-            
-            <p>
-                In the regession section, we mentioned that the hard part of regression analysis is the model. To put that difficulty in perspective, consider the model below while keeping in mind that this is <em>Nobel Prize winning work</em>.
-                 The only thing simplier than a line is a single point. But the leap from point to line was revolutionary.
-            </p>
-            
-            <p>
-                The CAPM is a linear model and generally states that the price of stock depends on the price of the market as a whole. as an equation, the CAPM can be stated as follows:
-            </p>
-            
-            <p><var>y</var> = <var>a</var> + <var>bx</var> + <var>e</var></p>
-            
-            <p>Where:</p>
-            
-            <p>
-                <var>y</var> = Price of stock in question</br>
-                <var>a</var> = Alpha, or the "advantages" of the firm in question</br>
-                <var>b</var> = Beta, or sensitivity to market conditions</br>
-                <var>x</var> = Price of a market index</br>
-                <var>e</var> = Error Term
-            </p>
-            
-            <p>
-                You will notice that this equation looks very similar to the equation discussed in the regression section. We broke down the general linear equation in that chapter, but we will dive in more fully to the context of the stock market here.
-            </p>
-            
-            <p>
-                The price of the stock in question is pretty self explainitory. Price of a market index is also pretty straight forward, though choosing the wrong index will lead you to the wrong results. As a rule of thumb, pick the S&P 500 for US equities. \
-                If you know something special about a stock, say it is a tech company, you could use another index such as NASDAQ that might give you a little better of a fit but you cannot go wrong with the S&P 500 since it is such a broad measure.
-            </p>
-            
-            <p>
-                 Alpha is a little less obvious. One way to think about alpha is to imagine what the stock would be worth if the S&P 500 was zero. Said another way, alpha represents the value of a firms individual characteristics. If you compare two large bank stocks alpha could reprsent the skills of one bank's board of directors compared to the others.
-                  Or where one bank has more of a physical presence than the other. Or how much debt one bank has compared to the other. Alpha tries to caputre all the things that make a firm unique independent of market highs or lows.
-            </p>
-            
-            <p>
-                Beta tries to capute the influence of market conditions on a stock's price. Masaratis are in more demand during market highs, so a Masarati dealship might have a high beta. People always need salt, so a salt manufacture might have a beta close to zero. Cheap cloths are in highest demand when the market is low, so cheap cloths store might have a negative beta.
-                Beta seeks to show you how a stock might perform given certain market conditions.
-            </p>
-            
-            <p>
-                Lastly there is <var>e</var>. Poor lonely <var>e</var> does not get a lot of love in most finance circles. Go to any stock screener or trading platorm on the web and you will likely find values for alphas and betas for any stock. You might even get an R squared value, which shows how well a model fits the data at hand. But rarely, if ever, will you see <var>e</var>.
-                 And that is shame because there is arguably more value in <var>e</var> than the rest of the values in the model. That is because <var>e</var> is the difference between what the model says the price should be and what the price actually is. <var>E</var> can tell you when the market messed up!
-            </p>
-            
-            <p>
-                Read the Strategy section to learn more about how to apply <var>e</var> to your trading strategy.
-            </p>
-        </div>
-        
-        <div class="tab-pane" id="strategy" role="tabpanel">
-            <p>We have a well formed model and we want to trade some stocks, now what?</p>
-            
-            <p>
-                What we need is a plan, a strategy. To start, recall the CAPM model and think about it this way: There are two parts of the model, what the nobel prize winning model says should happen and the difference between what should have happened and what did happen.
-            </p>
-            
-            <p>
-                the difference between what actually happened and what the model thought should happen is known as the error term, <var>e</var>. A positive <var>e</var> means that the price of the stock is higher than the model thinks it should be. A negative <var>e</var> means
-                 that the model thinks the price should be higher than it actually is.
-            </p>
-            
-            <p>
-                Assuming you want to buy right now, sort stocks based on ascending values of <var>e</var>. This will give you a list of stocks that are most under valued based on the CAPM.
-            </p>
-            
-            <p>
-                Or assume that you are looking to sell stocks you own, or short sell some stock you dont own. This time you would want to sort by descending values of <var>e</var>, giving you a list of stocks that are most over valued based on the CAPM.
-            </p>
-            
-            <p>
-                Of course you always have to keep in mind, past performace does not guarentee future performace. Also, it is possible that something material has changed about the company who's stock you are looking at that would justify a large value of <var>e</var>.
-                Maybe the company is in merger talks and that is why the stock price is high compared to CAPM. The sort of screening methods mentioned above do not tell you what to do, only where to look!
-            </p>
-        </div>
-    </div>
+    
+    <p>Welcome to T-Rex Analytics. We aim to provide you with revelant market analysis that is easy to use and helpful in a different way.</p>
+    
+    <p>Different in what way? In a way that tells you the effectivness of other analysis methods. There are plenty of sites out there looking you give you leg up on the market.
+    At T-Rex we know that it is unlikely that you will ever get a leg up on the institutional types - it is their job to make money off of you and they are very good at it.
+    </p>
+    
+    <p>What we can do is show when when their "edge" is actually a mirage. Traders are very focused on tactics, go to any trading site and you will see desctiptions of things like: "Holloween Effect", "Covered Call Spreads", "Straddles vs Strangles" and all kinds of other absurdley named strategies.</p>
+    
+    <p>What you very rarely see people talk about is how most of the market is just made up. That is right, market prices are fake and reflect only what the last person paid for that stock. How do you know if that person knew what they were doing? How do you know if that is a fair prices? Chances are, you dont. But people have dedicated their lives to these sorts of questions, and some of them have even won Nobel prizes for their work.</p>
+    
+    <p>At T-Rex Analytics, we bring you these nobel prize winning models, and tell you what they say about market prices. We do that through Regression Analysis.</p>
+
+    
 </div>
     
